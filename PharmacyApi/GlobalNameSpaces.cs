@@ -1,0 +1,9 @@
+﻿global using AutoMapper;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Models.Infrastructure;
+global using ViewModels.General;
+global using Services;
+global using System.Linq.Dynamic.Core;
+global using System.Reflection;
+global using X.PagedList;

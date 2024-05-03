@@ -1,0 +1,19 @@
+version: '3.9'
+name: pharmacyapi
+services:
+  web:
+    build: .
+    container_name: pharmacy
+    ports:
+      - "81:80"
+    depends_on:
+        - sql
+  
+  sql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql_server2019
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=y
+      - MSSQL_SA_PASSWORD=Hussein@124
